@@ -26,6 +26,8 @@ private:
 private slots:
     void connectToServer(QString login, QString password);          // to connect to sever
     void connectedSocket();                                         // socket connected to server
+    void loggedClient();                                            // when logged succesful
+    void errorOccur(QString e_string);                              // error occur
 };
 
 #endif // MAINMANAGER_H

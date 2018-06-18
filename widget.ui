@@ -62,14 +62,17 @@
   <widget class="QLabel" name="label_Status">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>50</x>
      <y>260</y>
-     <width>71</width>
-     <height>16</height>
+     <width>141</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
     <string>Status</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>
