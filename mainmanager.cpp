@@ -19,6 +19,7 @@ void MainManager::connectsInit()
     connect(client,SIGNAL(socketHasConnect()),this,SLOT(connectedSocket()));
     connect(client,SIGNAL(loggedSuccessful()),this,SLOT(loggedClient()));
     connect(client,SIGNAL(errorOccur(QString)),this,SLOT(errorOccur(QString)));                             // error occur error msg
+    connect(client,SIGNAL(connection_status_ui_label_update(QString)),widget_login,SLOT(setLabelStatusConnectionText(QString))); // ui part
 }
 
 void MainManager::connectToServer(QString login, QString password)
@@ -29,6 +30,7 @@ void MainManager::connectToServer(QString login, QString password)
 void MainManager::connectedSocket()
 {
     widget_login->setLabelStatusText("connected");
+    widget_login->setLabelStatusConnectionText("");
 }
 
 void MainManager::loggedClient()

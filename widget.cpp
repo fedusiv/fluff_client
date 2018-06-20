@@ -35,6 +35,11 @@ void Widget::setLabelStatusText(QString text)
     ui->label_Status->setText(text);
 }
 
+void Widget::setLabelStatusConnectionText(QString text)
+{
+    ui->label_StatusConnection->setText(text);
+}
+
 void Widget::login_to_server()
 {
     // check input parametrs

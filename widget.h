@@ -16,6 +16,9 @@ public:
     ~Widget();
      void setLabelStatusText(QString text);
 
+public slots:
+      void setLabelStatusConnectionText(QString text);  // slot to change text
+
 private:
     Ui::Widget *ui;
     void setStartUI();
